@@ -76,8 +76,8 @@ allMusic.forEach((element, i) => {
     let index = i % songs.length;
 
     element.getElementsByTagName('img').src = songs[index].songImage;
-    element.getElementsByClassName('img-title').innerText = songs[index].songName;
-    element.getElementsByClassName('img-description').innerText = songs[index].songDes;
+element.getElementsByClassName('img-title').innerText = songs[index].songName;
+element.getElementsByClassName('img-description').innerText = songs[index].songDes;
 });
 
 let shuffle = document.getElementById('shuffle');
