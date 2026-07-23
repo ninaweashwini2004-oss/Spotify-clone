@@ -95,7 +95,7 @@ nav{
 
 .browse:hover{
      color: #fff;
-     transform: scale(1.05rem);
+     transform: scale(1.05);
 }
 
 .right-half{
@@ -224,7 +224,7 @@ nav{
 
 .box h4 {
     font-weight: 600;
-    font: 0.9rem;
+    font-size: 0.9rem;
     padding: 1.3rem 0 0.5rem 1rem;
 }
 
@@ -411,4 +411,183 @@ input[type='range']::-webkit-slider-thumb{
 #shuffle.active,
 #repeat.active{
     color:rgb(0, 255, 0);
+}
+
+/*======================== Break Points =====================*/
+@media (max-width:1024px){
+
+.search-bar{
+    width:20rem;
+}
+
+.right-half{
+    width:auto;
+}
+
+.nav-text{
+    display:none;
+}
+
+.main-left-part{
+    width:35%;
+}
+
+.main-right-part{
+    width:63%;
+}
+
+#progressBar{
+    width:350px;
+}
+
+.now-bar{
+    width:250px;
+    min-width:250px;
+}
+
+.song-info{
+    width:180px;
+}
+
+}
+
+@media (max-width:768px){
+
+nav{
+    flex-wrap:wrap;
+    height:auto;
+    padding:10px;
+}
+
+.left-half,
+.right-half{
+    width:100%;
+    justify-content:center;
+    margin:8px 0;
+}
+
+.search-bar{
+    width:90%;
+}
+
+.main{
+    flex-direction:column;
+    height:auto;
+}
+
+.main-left-part{
+    width:95%;
+    height:auto;
+    margin-bottom:15px;
+}
+
+.main-right-part{
+    width:95%;
+    height:auto;
+}
+
+.music-section{
+    margin:1rem;
+}
+
+.music-card{
+    min-width:150px;
+}
+
+.player-bar{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+}
+
+.now-bar{
+    width:100%;
+    min-width:100%;
+    justify-content:center;
+    margin-bottom:15px;
+}
+
+.music-controller{
+    width:100%;
+}
+
+#progressBar{
+    width:90%;
+}
+
+}
+
+@media (max-width:480px){
+
+.logo{
+    font-size:2rem;
+}
+
+.home-icon{
+    margin:.5rem;
+}
+
+.search-bar{
+    width:95%;
+    height:2.8rem;
+}
+
+.input-box{
+    font-size:1rem;
+}
+
+.right-half{
+    display:none;
+}
+
+.library{
+    margin:1rem;
+}
+
+.box{
+    width:100%;
+}
+
+.music-card{
+    min-width:140px;
+}
+
+.music-card img{
+    width:100%;
+    height:140px;
+}
+
+.img-title{
+    font-size:1rem;
+}
+
+.img-description{
+    font-size:.75rem;
+}
+
+.player-bar img{
+    width:50px;
+    height:50px;
+}
+
+.song-info{
+    width:150px;
+}
+
+.img-title-info{
+    font-size:1rem;
+}
+
+#progressBar{
+    width:95%;
+}
+
+.player-btns{
+    margin:.4rem;
+}
+
+#play{
+    font-size:2rem;
+}
+
 }
